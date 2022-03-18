@@ -1,0 +1,127 @@
+body, footer {
+    background: linear-gradient(to bottom left, #e96d5e, #ff9670, #ffe69d, #6a7e6a, #393f5f);
+    background-attachment: fixed;
+}
+#overlay {
+    position:relative;
+    display:block;
+    width: 100%;
+    height: 33%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+  #text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    text-align:center;
+  }
+  #text2{
+    position:relative;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    text-align:center;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-decoration-style:unset;
+  }
+h1 {
+    font-family: 'Creepster', cursive;
+}
+
+.splash{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background:black;
+    z-index: 200;
+    color:chartreuse;
+    text-align: center;
+    line-height: 90vh;
+}
+
+.splash.display-none{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background:black;
+    z-index: -10;
+    color:chartreuse;
+    text-align: center;
+    line-height: 90vh;
+    transition: all 0.5s;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+.fade-In {
+    opacity: 0;
+    animation: fadeIn 3s ease-in forwards;
+}
+
+p.intro {
+    color: #ff9670;
+    background: black;
+    opacity: 0.5;
+    font-size: 24px;
+}
+div.symbol {
+    text-align: center;
+    font-size: 200px;
+    margin-top: -100px;
+}
+div.container ~{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    border-style:ridge;
+}
+nav.navbar {
+    background:black;
+    color:#e96d5e;
+}
+div.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+div.flex-container-2 {
+    display: flex;
+    flex-direction: row;
+    align-content:space-around;
+    justify-content:space-evenly;
+    align-items: center;
+    position:relative;
+}
+.text-shadow {
+    text-shadow: 2px 2px 3px #393f5f, #6a7e6a, #e96d5e;
+}
+li.list-group-item {
+    color: #ff9670;
+    background: black;
+    opacity: 0.5;
+    font-size: 24px;
+}
